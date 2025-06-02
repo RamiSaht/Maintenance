@@ -1,0 +1,13 @@
+name: aemntc
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.10
+  - pip
+  - numpy>=2.0
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - pip:
+    - reliability
