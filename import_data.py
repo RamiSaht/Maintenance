@@ -1,5 +1,6 @@
 
 import pandas as pd
+from constants import *
 
 
 
@@ -32,7 +33,10 @@ sensor_names = ['T2', # total temperature at fan inlet
 # options to visualize the datadrame
 col_names =  index_names + operational_condition_names + sensor_names
 
-df_train = pd.read_csv(r'C:\.....\train_FD001.txt' ,  sep = ' ' , names=col_names, index_col = False,  usecols=range(len(col_names))) 
+df_train = pd.read_csv(fr'Data\train_{DATASET_NAME}.txt' ,  sep = ' ' , names=col_names, index_col = False,  usecols=range(len(col_names))) 
 
 
-df_test = pd.read_csv(r'C:\.....\test_FD001.txt' , sep=' ' , names= col_names, index_col = False,  usecols=range(len(col_names)))
+df_test = pd.read_csv(fr'Data\test_{DATASET_NAME}.txt' , sep=' ' , names= col_names, index_col = False,  usecols=range(len(col_names)))
+
+print(len(df_train), 'train samples')
+print(len(df_test), 'test samples')
