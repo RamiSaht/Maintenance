@@ -3,3 +3,6 @@ A. Saxena and K. Goebel (2008). “Turbofan Engine Degradation Simulation Data S
 
 Requires:
 Numpy 2.0
+reliability (pip)
+PyTorch
+Scikit-learn
