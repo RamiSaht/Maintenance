@@ -7,7 +7,7 @@ from constants import *
 
 index_names = ['engine', 'cycle']
 # Operational conditions: altitude, mach_number and throttle_resolver_angle
-operational_condition_names = ['altitude', 'TRA', 'mach_nr']
+operational_condition_names = ['altitude',  'mach_nr', 'TRA']
 sensor_names = ['T2', # total temperature at fan inlet
                 'T24',# total temperature at LPC outlet
                 'T30', # total temperature at HPC outlet
@@ -37,6 +37,3 @@ df_train = pd.read_csv(fr'Data\train_{DATASET_NAME}.txt' ,  sep = ' ' , names=co
 
 
 df_test = pd.read_csv(fr'Data\test_{DATASET_NAME}.txt' , sep=' ' , names= col_names, index_col = False,  usecols=range(len(col_names)))
-
-print(len(df_train), 'train samples')
-print(len(df_test), 'test samples')
