@@ -1,4 +1,4 @@
-def CRPS(true_RULs, RUL_distributions, beta = 1.5):
+def CRPS(true_RULs, RUL_distributions, beta = 1.5): # From the paper "Novel Metrics to Evaluate Probabilistic Remaining Useful Life: Prognostics with Applications to Turbofan Engines
     """
     This function calculates the CRPS and the weighted CRPS.
     Parameters

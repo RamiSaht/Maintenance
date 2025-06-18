@@ -9,6 +9,6 @@ dependencies:
   - pandas
   - scikit-learn
   - matplotlib
-  - ipykernel
+  - ipykernel>=6.0
   - pip:
     - reliability
